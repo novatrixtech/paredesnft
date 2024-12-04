@@ -4,23 +4,23 @@
     "properties": {
         "name": {
             "type": "string",
-            "description": "Identifies the asset to which this token represents"
+            "description": "MTALT20230003"
         },
         "decimals": {
             "type": "integer",
-            "description": "The number of decimal places that the token amount should display - e.g. 18, means to divide the token amount by 1000000000000000000 to get its user representation."
+            "description": "2"
         },
         "description": {
             "type": "string",
-            "description": "Describes the asset to which this token represents"
+            "description": "Unidade de Carbono Florestal - ARR + REDD"
         },
         "image": {
             "type": "string",
-            "description": "A URI pointing to a resource with mime type image/* representing the asset to which this token represents. Consider making any images at a width between 320 and 1080 pixels and aspect ratio between 1.91:1 and 4:5 inclusive."
+            "description": "https://res.cloudinary.com/dpulkvkgv/image/upload/v1689361731/projects/tkmh1tizooknipzw7gyk.jpg"
         },
         "properties": {
             "type": "object",
-            "description": "Arbitrary properties. Values may be strings, numbers, object or arrays."
+            "description": "Location: Alto Taquari/MT/BRA"
         }
     }
 }
