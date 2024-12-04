@@ -10,11 +10,12 @@ contract ParedesScript is Script {
     function setUp() public {}
 
     function run() public {
-        vm.startBroadcast();
-
-        paredes = new ParedesNFT(msg.sender);
-        paredes.mint(msg.sender, 1, 1231444, "");
-        paredes.setURI(1, "https://example.com/1");
+        uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
+        vm.startBroadcast(deployerPrivateKey);
+        address sender = 0x7aC722a69CDb106127f1f2cC86761B28176E5379;
+        paredes = new ParedesNFT(sender);
+        paredes.mint(sender, 1, 1231444, "");
+        paredes.setURI(1, "https://novatrixtech.github.io/paredesnft/static/nft/1.json");
 
         vm.stopBroadcast();
     }
